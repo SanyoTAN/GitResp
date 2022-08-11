@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Samsung</title>
+  <script type="text/javascript" src="../jquery.min.js"></script>
+  <script>
+    //这个函数是在页面渲染之后执行的吗？
+    function roll (){
+      var h = Math.random()*300;
+      var w = Math.random()*500;
+      var s = $("h1");
+      s.setAttribute("margin-top",h+"px");
+      s.setAttribute("margin-left",w+"px");
+    }
+  </script>
+</head>
+<body>
+<h1 style="text-align: center;color: brown;margin-top: 200px;margin-left: 200px;" onmousemove="roll()">Welcome to main website !</h1>
+</body>
+</html>
